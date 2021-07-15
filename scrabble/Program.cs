@@ -10,9 +10,11 @@ namespace Scrabble.Models
       Console.WriteLine("Welcome to our Scrabble Score Application");
       Console.WriteLine("Enter a word, and we'll tell you the scrabble score for it!");
       string userInput = Console.ReadLine();
-      ScrabblePlay = new ScrabblePlay(userInput, wordScore, userInputLetters);
+      Scrabble play = new Scrabble(userInput);
       // Scrabble result = new Scrabble("car");
       // Console.WriteLine("Split Array: " + result.SplitInputtedWord);
     }
   }
 }
+
+

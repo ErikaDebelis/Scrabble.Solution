@@ -12,7 +12,17 @@ namespace Scrabble.Tests
     public void Dictionary_InitializesValesCorrectly()
     {
       Dictionary<string, int> letters = new Dictionary<string, int>() {{"c", 3}, {"a", 1}, {"r", 1}};
-      Assert.AreEqual( 3, letters["c"]); // first param = expected, second = "calling it" 
+      Assert.AreEqual( 3, letters["c"]);
+      Assert.AreEqual( 1, letters["a"]);
+      Assert.AreEqual( 1, letters["r"]);
+    }
+    [TestMethod]
+    public void IsASplitArray_TakesInAWord_SplitsIntoCharArrays()
+    {
+      string userInput = "car";
+      Assert.AreEqual( 3, letters["c"]);
+      Assert.AreEqual( 1, letters["a"]);
+      Assert.AreEqual( 1, letters["r"]);
     }
   }
 }

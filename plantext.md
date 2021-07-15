@@ -14,3 +14,18 @@ Dictionary<char, int> scrabble = new Dictionary<char, int>() {
   {"D", 2},
 
 }
+
+
+// >  Dictionary<string, int> cupcakeOrder = new Dictionary<string, int>() { {"vanilla", 12}, {"chocolate", 24}, {"raspberry", 6}, {"caramel apple", 36} };
+
+// // > cupcakeOrder["vanilla"] // How many vanilla cupcakes do we want?
+// 12
+
+// > cupcakeOrder["chocolate"] // How many chocolate?
+// 24
+
+// > cupcakeOrder["raspberry"]
+// 6
+
+// > cupcakeOrder["caramel apple"]
+// 36

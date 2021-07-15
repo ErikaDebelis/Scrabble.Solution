@@ -1,17 +1,16 @@
-user will input three sides
+Make a console application that takes a word and returns the Scrabble score for that word. Make sure to start with your specs, and that you include a README for this project and create a Git repository for it. Here are the values of letters in Scrabble:
+A, E, I, O, U, L, N, R, S, T       1
+D, G                               2
+B, C, M, P                         3
+F, H, V, W, Y                      4
+K                                  5
+J, X                               8
+Q, Z                               10
 
-function compares these sizes and returns if a triangle is true or false
 
 
-namespace
-class TriangleCheck
-side1
-side2
-side3
-
-checkSides() {
-  if ()
-  else if ()
-  else if ()
+Dictionary<char, int> scrabble = new Dictionary<char, int>() {
+  {"A", 1}, {"E", 1}, {"I", 1},
+  {"D", 2},
 
 }

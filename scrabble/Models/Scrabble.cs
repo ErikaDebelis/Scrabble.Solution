@@ -6,32 +6,22 @@ namespace Scrabble.Models
   public class Scrabble //scrabble class
   {
     public string InputtedWord { get; set; }
-    public int InputtedWordScore { get; set; }
-    public char[] SplitInputtedWord { get; set; }
-    public Scrabble(string userInput) //constructor
+    public static Dictionary<char, int> letters = new Dictionary<char, int>()
     {
-      InputtedWord = userInput;
-    }
-    public char[] ScrabbleScore(string userInput) //method
+      {'A',1}, {'B',3}, {'C',3}, {'D',2}, {'E',1}, {'F',4}, {'G',2}, {'H',4}, {'I',1}, {'J',8}, {'K',5}, {'L',1}, {'M',3}, {'N',1}, {'O',1}, {'P',3}, {'Q',10}, {'R',1}, {'S',1}, {'T',1}, {'U',1}, {'V',4}, {'W',4}, {'X',8}, {'Y',4}, {'Z',10}
+    };
+
+    public static int ScrabbleScore(string userInput) //method
     {
       InputtedWord = userInput;
       InputtedWordScore = 0;
-      // We have a string that we convert into an array of characters
-      return SplitInputtedWord = userInput.ToCharArray();
-      //   foreach (char character in SplitInputtedWord)
-      //   {
-      //     if(letters.ContainsKey();
-      //         {
-      //             InputtedWordScore += letters[character];
-      //             Console.WriteLine(InputtedWordScore);
-      //         }
-      //         else
-      //         {
-      //             return false;
-    } // value
-
-    public static Dictionary<char, int> letters = new Dictionary<char, int>() { { 'c', 3 }, { 'a', 1 }, { 'r', 1 } };
-
+      SplitInputtedWord = userInput.ToUpper().ToCharArray();
+      foreach (char character in SplitInputtedWord)
+      {
+        InputtedWordScore += letters[character];
+        return InputtedWordScore;
+      }
+    }
   }
 }
 
